@@ -1,0 +1,28 @@
+header {
+    background-color: #244751;
+    color: #E8FDFF;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Indie Flower', cursive;
+}
+
+main {
+    background-color: white;
+    padding: 16px;
+}
+
+.post {
+    margin-bottom: 48px;
+}
+
+/**/This part doesn't seem to make difference*/
+.post .user-info img {
+    border-radius: 50%;
+}
+
+/**/This part doesn't seem to make difference*/
+.post:hover {
+    outline-color: blue;
+}
