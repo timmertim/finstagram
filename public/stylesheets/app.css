@@ -17,12 +17,12 @@ main {
     margin-bottom: 48px;
 }
 
-/**/This part doesn't seem to make difference*/
+/*This part doesn't seem to make difference*/
 .post .user-info img {
     border-radius: 50%;
 }
 
-/**/This part doesn't seem to make difference*/
+/*This part doesn't seem to make difference*/
 .post:hover {
     outline-color: blue;
 }

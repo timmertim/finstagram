@@ -1,0 +1,75 @@
+        <header>
+            <h1>
+                Geology cakes rock! :)
+            </h1>
+        </header>
+        <main role = "main">
+            
+            <!--first post-->
+            <article class="post">
+                <div class="user-info">
+                    <img src="<%= @post_fred[:avatar_url] %>" alt="<%= @post_fred[:username] %>">
+                    <h2><%= @post_fred[:username] %></h2>
+                    <h3><%= @post_fred[:humanized_time_ago] %></h3>
+                </div>
+                <a class="photo" href="#">
+                    <img src="<%= @post_fred[:photo_url] %>">
+                </a>
+                <div class="actions">
+                    <% @post_fred[:like_count] %> likes
+                    <span class="comment-count"><%= @post_fred[:comment_count] %> comment</span>
+                </div>
+                <ul class="comments">
+                    <li>
+                        <p>
+                            <%= @post_fred[:comments][0][:username] %>: <%= @post_fred[:comments][0][:text] %>
+                        </p>
+                    </li>
+                </ul>
+            </article>
+            
+            <!--Second post-->
+            <article class="post">
+                <div class="user-info">
+                    <img src="<%= @post_gneiss[:avatar_url] %>" alt="<%= @post_gneiss[:username] %>">
+                    <h2><%= @post_gneiss[:username] %></h2>
+                    <h3><%= @post_gneiss[:humanized_time_ago] %></h3>
+                </div>
+                <a class="photo" href="#">
+                    <img src="<%= @post_gneiss[:photo_url] %>">
+                </a>
+                <div class="actions">
+                    <% @post_gneiss[:like_count] %> likes
+                    <span class="comment-count"><%= @post_gneiss[:comment_count] %> comment</span>
+                </div>
+                <ul class="comments">
+                    <li>
+                        <p>
+                            <%= @post_gneiss[:comments][0][:username] %>: <%= @post_gneiss[:comments][0][:text] %>
+                        </p>
+                    </li>
+                </ul>
+            </article>
+            
+            <!--Third post-->
+            <article class="post">
+                <div class="user-info">
+                    <img src="<%= @post_shirley[:avatar_url] %>" alt="<%= @post_shirley[:username] %>">
+                    <h2><%= @post_shirley[:username] %></h2>
+                    <h3><%= @post_shirley[:humanized_time_ago] %></h3>
+                </div>
+                <a class="photo" href="#">
+                    <img src="<%= @post_shirley[:photo_url] %>">
+                </a>
+                <div class="actions">
+                    <% @post_shirley[:like_count] %> likes
+                    <span class="comment-count"><%= @post_shirley[:comment_count] %> comment</span>
+                </div>
+                <ul class="comments">
+                    <li>
+                        <p>
+                            <%= @post_shirley[:comments][0][:username] %>: <%= @post_shirley[:comments][0][:text] %>
+                        </p>
+                    </li>
+                </ul>
+            </article>
