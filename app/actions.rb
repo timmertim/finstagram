@@ -46,8 +46,10 @@ get '/' do
         }]
     }
     
-    [@post_fred, @post_gneiss, @post_shirley].to_s
+    # [@post_fred, @post_gneiss, @post_shirley].to_s
 
-    erb :index
+    @posts = [@post_fred, @post_gneiss, @post_shirley]
+
+    erb(:index)
 
 end
